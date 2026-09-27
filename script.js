@@ -478,4 +478,17 @@ document.addEventListener("DOMContentLoaded", () => {
             document.getElementById("resume").scrollIntoView({ behavior: "smooth" });
         });
     }
+    const themeToggle = document.getElementById("theme-toggle");
+    if (themeToggle) {
+        themeToggle.addEventListener("click", function () {
+            document.body.classList.toggle("light-theme");
+
+            if (document.body.classList.contains("light-theme")) {
+                themeToggle.innerHTML = '<i class="fa-solid fa-moon"></i>';
+            } else {
+                themeToggle.innerHTML = '<i class="fa-solid fa-sun"></i>';
+            }
+        });
+    }
 });
+
