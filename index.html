@@ -1,0 +1,1037 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Farheen F - Portfolio Website. B.Tech Computer Science and Engineering student at Jawaharlal College of Engineering and Technology (JCET), Lakkidi, Kerala. Web Developer, AI Enthusiast, Prompt Engineer.">
+    <meta name="keywords" content="Farheen F, Farheen, JCET, Portfolio, B.Tech CSE, Web Developer, Kerala, Jawaharlal College of Engineering, QBot, SmartEntry, NSITE">
+    <meta name="author" content="Farheen F">
+    <title>Farheen F | Portfolio - B.Tech Computer Science Student & Developer</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+    
+    <!-- Custom Cursor Glow Background -->
+    <div class="cursor-glow" id="cursor-glow"></div>
+    <div class="bg-grid-pattern"></div>
+
+    <!-- Navigation Header -->
+    <header class="navbar-header" id="navbar-header">
+        <nav class="navbar container">
+            <a href="#home" class="nav-logo" id="nav-logo">
+                <span class="logo-text">Farheen<span class="dot">.</span>F</span>
+            </a>
+            
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item"><a href="#home" class="nav-link active" id="link-home">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link" id="link-about">About</a></li>
+                <li class="nav-item"><a href="#education" class="nav-link" id="link-education">Education</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link" id="link-skills">Skills</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link" id="link-projects">Projects</a></li>
+                <li class="nav-item"><a href="#certificates" class="nav-link" id="link-certificates">Certificates</a></li>
+                <li class="nav-item"><a href="#achievements" class="nav-link" id="link-achievements">Achievements</a></li>
+                <li class="nav-item"><a href="#gallery" class="nav-link" id="link-gallery">Gallery</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link" id="link-contact">Contact</a></li>
+            </ul>
+
+            <div class="nav-toggle" id="nav-toggle">
+                <i class="fa-solid fa-bars-staggered"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        
+        <!-- Hero Section -->
+        <section id="home" class="hero-section section">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <span class="hero-badge">Welcome to my Digital Space</span>
+                    <h1 class="hero-title">Hi, I'm <span class="highlight-gradient">Farheen F</span></h1>
+                    <h2 class="hero-subtitle">
+                        Second-Year B.Tech CSE Student
+                    </h2>
+                    <p class="hero-typing-container">
+                        <span class="typed-text" id="typed-text"></span><span class="cursor">&nbsp;</span>
+                    </p>
+                    <p class="hero-description">
+                        Building responsive, modern web applications and exploring the intersection of Computer Science, AI Prompt Engineering, and interactive systems. Studying at Jawaharlal College of Engineering and Technology (JCET).
+                    </p>
+                    <div class="hero-cta">
+                        <a href="#projects" class="btn btn-primary" id="hero-btn-projects">
+                            Explore Projects <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="#resume" class="btn btn-secondary" id="hero-btn-resume">
+                            View Resume <i class="fa-solid fa-file-pdf"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-outline" id="hero-btn-contact">
+                            Contact Me <i class="fa-solid fa-envelope"></i>
+                        </a>
+                    </div>
+                    <div class="hero-socials">
+                        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub" id="hero-social-github">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn" id="hero-social-linkedin">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="mailto:farheen.f.cse@gmail.com" class="social-icon" aria-label="Email" id="hero-social-email">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image-wrapper">
+                    <div class="hero-blob"></div>
+                    <div class="hero-image-container">
+                        <!-- Custom designed premium SVG avatar representing a developer -->
+                        <svg class="avatar-svg" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="avatar-grad-1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="#3B82F6" />
+                                    <stop offset="100%" stop-color="#8B5CF6" />
+                                </linearGradient>
+                                <linearGradient id="avatar-grad-2" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="#1E293B" />
+                                    <stop offset="100%" stop-color="#0F172A" />
+                                </linearGradient>
+                                <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+                                    <feGaussianBlur stdDeviation="8" result="blur" />
+                                    <feComposite in="SourceGraphic" in2="blur" operator="over" />
+                                </filter>
+                            </defs>
+                            <circle cx="100" cy="100" r="95" fill="url(#avatar-grad-2)" stroke="url(#avatar-grad-1)" stroke-width="2" />
+                            <!-- Background Tech details -->
+                            <text x="35" y="60" fill="#3B82F6" font-family="'Courier New', monospace" font-size="12" opacity="0.3">&lt;code&gt;</text>
+                            <text x="135" y="150" fill="#8B5CF6" font-family="'Courier New', monospace" font-size="12" opacity="0.3">{/* AI */}</text>
+                            <!-- Animated orbits -->
+                            <circle cx="100" cy="100" r="80" fill="none" stroke="#ffffff" stroke-width="0.5" stroke-dasharray="4,8" opacity="0.2"/>
+                            <!-- Avatar head / body -->
+                            <path d="M60,160 C60,120 80,110 100,110 C120,110 140,120 140,160 Z" fill="#1F2937" stroke="url(#avatar-grad-1)" stroke-width="2" />
+                            <circle cx="100" cy="75" r="28" fill="#374151" stroke="url(#avatar-grad-1)" stroke-width="2" />
+                            <!-- Glasses -->
+                            <path d="M85,73 L97,73 M103,73 L115,73" stroke="#3B82F6" stroke-width="2.5" />
+                            <circle cx="91" cy="73" r="6" fill="none" stroke="#3B82F6" stroke-width="2" />
+                            <circle cx="109" cy="73" r="6" fill="none" stroke="#3B82F6" stroke-width="2" />
+                            <!-- Developer details -->
+                            <path d="M92,93 Q100,98 108,93" fill="none" stroke="#8B5CF6" stroke-width="2" stroke-linecap="round" />
+                            <!-- Glowing dot -->
+                            <circle cx="145" cy="85" r="4" fill="#3B82F6" filter="url(#glow)" />
+                            <circle cx="50" cy="120" r="5" fill="#8B5CF6" filter="url(#glow)" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <a href="#about" aria-label="Scroll Down" id="btn-scroll-down">
+                    <span class="mouse">
+                        <span class="wheel"></span>
+                    </span>
+                </a>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="section">
+            <div class="container">
+                <div class="section-title-wrapper">
+                    <span class="section-subtitle">Discovery</span>
+                    <h2 class="section-title">About Me</h2>
+                    <div class="title-bar"></div>
+                </div>
+                
+                <div class="about-grid">
+                    <div class="about-info-card glass-card">
+                        <h3>Hi, I'm Farheen!</h3>
+                        <p class="about-intro">
+                            Currently pursuing my <strong>B.Tech in Computer Science and Engineering</strong> at Jawaharlal College of Engineering and Technology (JCET), Lakkidi, Palakkad, Kerala.
+                        </p>
+                        <p class="about-objective">
+                            <strong>Career Objective:</strong> To leverage my programming competencies, prompt engineering capabilities, and creative web design skills to engineer impactful software solutions. I am driven by the passion to explore AI systems and build websites that bridge technical sophistication with highly intuitive human-machine user experiences.
+                        </p>
+                        
+                        <div class="about-details-grid">
+                            <div class="detail-item">
+                                <i class="fa-solid fa-graduation-cap"></i>
+                                <div>
+                                    <h4>Education Path</h4>
+                                    <p>B.Tech CSE (Second Year)</p>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <div>
+                                    <h4>Location</h4>
+                                    <p>Kerala, India</p>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fa-solid fa-heart"></i>
+                                <div>
+                                    <h4>Interests</h4>
+                                    <p>AI, Prompting, Web Dev</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-strengths-card glass-card">
+                        <h3>My Strengths & Hobbies</h3>
+                        <div class="strengths-container">
+                            <h4>Personal Strengths</h4>
+                            <div class="tag-group">
+                                <span class="tag tag-blue"><i class="fa-solid fa-bolt"></i> Analytical Thinker</span>
+                                <span class="tag tag-purple"><i class="fa-solid fa-users"></i> Adaptable Team Member</span>
+                                <span class="tag tag-pink"><i class="fa-solid fa-lightbulb"></i> Innovative Problem Solver</span>
+                                <span class="tag tag-blue"><i class="fa-solid fa-clock"></i> Disciplined & Detail-Oriented</span>
+                            </div>
+                        </div>
+                        <div class="hobbies-container">
+                            <h4>Hobbies & Leisure</h4>
+                            <div class="hobbies-grid">
+                                <div class="hobby-item">
+                                    <i class="fa-solid fa-code"></i>
+                                    <span>Coding & Tweaking</span>
+                                </div>
+                                <div class="hobby-item">
+                                    <i class="fa-solid fa-brain"></i>
+                                    <span>AI Prompt Engineering</span>
+                                </div>
+                                <div class="hobby-item">
+                                    <i class="fa-solid fa-book-open"></i>
+                                    <span>Tech Reading</span>
+                                </div>
+                                <div class="hobby-item">
+                                    <i class="fa-solid fa-gamepad"></i>
+                                    <span>Puzzle Solving</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="section bg-alt">
+            <div class="container">
+                <div class="section-title-wrapper">
+                    <span class="section-subtitle">Academic Journey</span>
+                    <h2 class="section-title">Education</h2>
+                    <div class="title-bar"></div>
+                </div>
+
+                <div class="timeline">
+                    <!-- Education Item 1 -->
+                    <div class="timeline-item reveal">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2024 - Present</div>
+                        <div class="timeline-content glass-card">
+                            <span class="timeline-tag tag-blue">Bachelor of Technology</span>
+                            <h3>Computer Science & Engineering</h3>
+                            <h4 class="institution">Jawaharlal College of Engineering and Technology (JCET)</h4>
+                            <p class="location"><i class="fa-solid fa-location-dot"></i> Lakkidi, Palakkad, Kerala</p>
+                            <p class="timeline-desc">
+                                Currently in my Second Year. Actively engaging in coursework covering Data Structures, Algorithms, Object-Oriented Programming, and database management. Actively participating in technical committees, coding hackathons, and web-development clubs.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Education Item 2 -->
+                    <div class="timeline-item reveal">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2022 - 2024</div>
+                        <div class="timeline-content glass-card">
+                            <span class="timeline-tag tag-purple">Higher Secondary Education</span>
+                            <h3>Science & Mathematics (HSE)</h3>
+                            <h4 class="institution">Higher Secondary School</h4>
+                            <p class="location"><i class="fa-solid fa-location-dot"></i> Kerala, India</p>
+                            <p class="timeline-desc">
+                                Focused on Physics, Chemistry, Mathematics, and Computer Science. Developed foundational analytical capabilities, scientific logic, and introductory software concepts.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Education Item 3 -->
+                    <div class="timeline-item reveal">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2022 Class-X</div>
+                        <div class="timeline-content glass-card">
+                            <span class="timeline-tag tag-pink">Secondary Education</span>
+                            <h3>High School (SSLC / CBSE)</h3>
+                            <h4 class="institution">High School Academy</h4>
+                            <p class="location"><i class="fa-solid fa-location-dot"></i> Kerala, India</p>
+                            <p class="timeline-desc">
+                                Graduated with high academic performance. Participated in science exhibitions, debate forums, and mathematics olympiads.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+            <div class="container">
+                <div class="section-title-wrapper">
+                    <span class="section-subtitle">Proficiencies</span>
+                    <h2 class="section-title">My Skills</h2>
+                    <div class="title-bar"></div>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- Programming Skills -->
+                    <div class="skills-card glass-card reveal">
+                        <h3 class="skills-header"><i class="fa-solid fa-code icon-blue"></i> Programming</h3>
+                        <div class="skill-bar-wrapper">
+                            <div class="skill-info">
+                                <span>C Language</span>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                            <div class="skill-bar-bg">
+                                <div class="skill-bar-fill progress-blue" data-percent="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar-wrapper">
+                            <div class="skill-info">
+                                <span>Python</span>
+                                <span class="skill-percentage">75%</span>
+                            </div>
+                            <div class="skill-bar-bg">
+                                <div class="skill-bar-fill progress-blue" data-percent="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar-wrapper">
+                            <div class="skill-info">
+                                <span>HTML5</span>
+                                <span class="skill-percentage">90%</span>
+                            </div>
+                            <div class="skill-bar-bg">
+                                <div class="skill-bar-fill progress-blue" data-percent="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar-wrapper">
+                            <div class="skill-info">
+                                <span>CSS3 / Modern CSS</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar-bg">
+                                <div class="skill-bar-fill progress-blue" data-percent="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar-wrapper">
+                            <div class="skill-info">
+                                <span>JavaScript (ES6+)</span>
+                                <span class="skill-percentage">70%</span>
+                            </div>
+                            <div class="skill-bar-bg">
+                                <div class="skill-bar-fill progress-blue" data-percent="70"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tools & Tech Skills -->
+                    <div class="skills-card glass-card reveal">
+                        <h3 class="skills-header"><i class="fa-solid fa-toolbox icon-purple"></i> Tools & Technologies</h3>
+                        <div class="skill-bar-wrapper">
+                            <div class="skill-info">
+                                <span>Git & GitHub Version Control</span>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                            <div class="skill-bar-bg">
+                                <div class="skill-bar-fill progress-purple" data-percent="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar-wrapper">
+                            <div class="skill-info">
+                                <span>VS Code IDE</span>
+                                <span class="skill-percentage">90%</span>
+                            </div>
+                            <div class="skill-bar-bg">
+                                <div class="skill-bar-fill progress-purple" data-percent="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar-wrapper">
+                            <div class="skill-info">
+                                <span>AI Tools (ChatGPT, Claude)</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar-bg">
+                                <div class="skill-bar-fill progress-purple" data-percent="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar-wrapper">
+                            <div class="skill-info">
+                                <span>Prompt Engineering</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar-bg">
+                                <div class="skill-bar-fill progress-purple" data-percent="85"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Soft Skills -->
+                    <div class="skills-card glass-card reveal">
+                        <h3 class="skills-header"><i class="fa-solid fa-hands-helping icon-pink"></i> Soft Skills</h3>
+                        <div class="skill-bar-wrapper">
+                            <div class="skill-info">
+                                <span>Leadership</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar-bg">
+                                <div class="skill-bar-fill progress-pink" data-percent="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar-wrapper">
+                            <div class="skill-info">
+                                <span>Communication</span>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                            <div class="skill-bar-bg">
+                                <div class="skill-bar-fill progress-pink" data-percent="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar-wrapper">
+                            <div class="skill-info">
+                                <span>Teamwork & Collaboration</span>
+                                <span class="skill-percentage">90%</span>
+                            </div>
+                            <div class="skill-bar-bg">
+                                <div class="skill-bar-fill progress-pink" data-percent="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar-wrapper">
+                            <div class="skill-info">
+                                <span>Decision Making</span>
+                                <span class="skill-percentage">75%</span>
+                            </div>
+                            <div class="skill-bar-bg">
+                                <div class="skill-bar-fill progress-pink" data-percent="75"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section bg-alt">
+            <div class="container">
+                <div class="section-title-wrapper">
+                    <span class="section-subtitle">Creations</span>
+                    <h2 class="section-title">Projects</h2>
+                    <div class="title-bar"></div>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card glass-card reveal">
+                        <div class="project-image-wrapper">
+                            <div class="project-gradient-overlay overlay-qbot"></div>
+                            <div class="project-icon-placeholder"><i class="fa-solid fa-comments"></i></div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Campus Query Chatbot (QBot)</h3>
+                            <p class="project-desc">
+                                An intelligent web-based chatbot designed for JCET students to resolve academic, fee structure, and department queries. Built utilizing basic AI concepts and custom response logics.
+                            </p>
+                            <div class="project-tech-tags">
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">CSS</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">AI Chat API</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline"><i class="fa-brands fa-github"></i> GitHub</a>
+                                <a href="#" class="btn btn-sm btn-primary demo-trigger"><i class="fa-solid fa-up-right-from-square"></i> Live Demo</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card glass-card reveal">
+                        <div class="project-image-wrapper">
+                            <div class="project-gradient-overlay overlay-nsite"></div>
+                            <div class="project-icon-placeholder"><i class="fa-solid fa-globe"></i></div>
+                        </div>
+                        <div class="project-content">
+                            <h3>NSITE Website</h3>
+                            <p class="project-desc">
+                                A responsive portal developed for NSITE, displaying events, registrations, guest speakers, and schedules. Designed with glassmorphic cards and interactive scrolling elements.
+                            </p>
+                            <div class="project-tech-tags">
+                                <span class="tech-tag">HTML5</span>
+                                <span class="tech-tag">CSS Grid</span>
+                                <span class="tech-tag">JS Animation</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline"><i class="fa-brands fa-github"></i> GitHub</a>
+                                <a href="#" class="btn btn-sm btn-primary demo-trigger"><i class="fa-solid fa-up-right-from-square"></i> Live Demo</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="project-card glass-card reveal">
+                        <div class="project-image-wrapper">
+                            <div class="project-gradient-overlay overlay-smartentry"></div>
+                            <div class="project-icon-placeholder"><i class="fa-solid fa-id-card"></i></div>
+                        </div>
+                        <div class="project-content">
+                            <h3>SmartEntry</h3>
+                            <p class="project-desc">
+                                A college gates access logging utility. Simulates identity checks and tracks check-in and check-out logs for campus security tracking systems.
+                            </p>
+                            <div class="project-tech-tags">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Flask</span>
+                                <span class="tech-tag">LocalDB</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline"><i class="fa-brands fa-github"></i> GitHub</a>
+                                <a href="#" class="btn btn-sm btn-primary demo-trigger"><i class="fa-solid fa-up-right-from-square"></i> Live Demo</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 4 (Future Projects) -->
+                    <div class="project-card glass-card reveal future-project-card">
+                        <div class="project-image-wrapper">
+                            <div class="project-gradient-overlay overlay-future"></div>
+                            <div class="project-icon-placeholder"><i class="fa-solid fa-hourglass-half"></i></div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Future Projects</h3>
+                            <p class="project-desc">
+                                Exploring computer vision models, decentralized web protocols, and voice-assisted query answering dashboards for academic workflows. Coming soon!
+                            </p>
+                            <div class="project-tech-tags">
+                                <span class="tech-tag">AI/ML</span>
+                                <span class="tech-tag">Python OpenCV</span>
+                                <span class="tech-tag">Next.js</span>
+                            </div>
+                            <div class="project-links">
+                                <span class="future-badge"><i class="fa-solid fa-rocket"></i> Under Conception</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certificates Section -->
+        <section id="certificates" class="section">
+            <div class="container">
+                <div class="section-title-wrapper">
+                    <span class="section-subtitle">Credentials</span>
+                    <h2 class="section-title">Certificates Gallery</h2>
+                    <div class="title-bar"></div>
+                </div>
+
+                <!-- Custom PDF Uploader Container -->
+                <div class="upload-container glass-card reveal">
+                    <div class="upload-header">
+                        <i class="fa-solid fa-file-arrow-up upload-icon"></i>
+                        <h3>Add Local Certificates</h3>
+                        <p>Upload your own PDF certificates locally. They will be added to the grid below and saved inside your browser session.</p>
+                    </div>
+                    <label for="cert-upload" class="btn btn-primary cursor-pointer">
+                        <i class="fa-solid fa-cloud-upload-alt"></i> Choose PDF File
+                    </label>
+                    <input type="file" id="cert-upload" accept="application/pdf" style="display: none;">
+                    <div id="upload-feedback" class="upload-feedback"></div>
+                </div>
+
+                <div class="certificates-grid" id="certificates-grid">
+                    <!-- Default Preloaded Certificate 1 -->
+                    <div class="cert-card glass-card reveal" data-id="default-1">
+                        <div class="cert-thumbnail-wrapper">
+                            <!-- Premium Certificate Visual via CSS patterns -->
+                            <div class="cert-badge-visual">
+                                <i class="fa-solid fa-award"></i>
+                            </div>
+                            <span class="cert-tag">Python & AI</span>
+                        </div>
+                        <div class="cert-content">
+                            <h3>Python Programming Mastery</h3>
+                            <p class="cert-org"><i class="fa-solid fa-building-columns"></i> Coursera / Google</p>
+                            <p class="cert-date"><i class="fa-solid fa-calendar-alt"></i> March 2025</p>
+                            <div class="cert-buttons">
+                                <button class="btn btn-sm btn-primary view-cert-btn" data-type="default" data-file="python-cert"><i class="fa-solid fa-eye"></i> View</button>
+                                <a href="#" class="btn btn-sm btn-outline download-cert-btn" download="python-mastery.pdf"><i class="fa-solid fa-download"></i> Download</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Default Preloaded Certificate 2 -->
+                    <div class="cert-card glass-card reveal" data-id="default-2">
+                        <div class="cert-thumbnail-wrapper">
+                            <div class="cert-badge-visual">
+                                <i class="fa-solid fa-code"></i>
+                            </div>
+                            <span class="cert-tag">Web Development</span>
+                        </div>
+                        <div class="cert-content">
+                            <h3>Responsive Web Design</h3>
+                            <p class="cert-org"><i class="fa-solid fa-building-columns"></i> freeCodeCamp</p>
+                            <p class="cert-date"><i class="fa-solid fa-calendar-alt"></i> November 2024</p>
+                            <div class="cert-buttons">
+                                <button class="btn btn-sm btn-primary view-cert-btn" data-type="default" data-file="web-cert"><i class="fa-solid fa-eye"></i> View</button>
+                                <a href="#" class="btn btn-sm btn-outline download-cert-btn" download="responsive-web.pdf"><i class="fa-solid fa-download"></i> Download</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Default Preloaded Certificate 3 -->
+                    <div class="cert-card glass-card reveal" data-id="default-3">
+                        <div class="cert-thumbnail-wrapper">
+                            <div class="cert-badge-visual">
+                                <i class="fa-solid fa-brain"></i>
+                            </div>
+                            <span class="cert-tag">Prompt Engineering</span>
+                        </div>
+                        <div class="cert-content">
+                            <h3>Advanced Prompt Engineering</h3>
+                            <p class="cert-org"><i class="fa-solid fa-building-columns"></i> DeepLearning.AI</p>
+                            <p class="cert-date"><i class="fa-solid fa-calendar-alt"></i> January 2025</p>
+                            <div class="cert-buttons">
+                                <button class="btn btn-sm btn-primary view-cert-btn" data-type="default" data-file="prompt-cert"><i class="fa-solid fa-eye"></i> View</button>
+                                <a href="#" class="btn btn-sm btn-outline download-cert-btn" download="prompt-engineering.pdf"><i class="fa-solid fa-download"></i> Download</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Achievements Section -->
+        <section id="achievements" class="section bg-alt">
+            <div class="container">
+                <div class="section-title-wrapper">
+                    <span class="section-subtitle">Milestones</span>
+                    <h2 class="section-title">Achievements</h2>
+                    <div class="title-bar"></div>
+                </div>
+
+                <div class="achievements-list">
+                    <!-- Achievement 1 -->
+                    <div class="achievement-item glass-card reveal">
+                        <div class="achievement-icon">
+                            <i class="fa-solid fa-trophy"></i>
+                        </div>
+                        <div class="achievement-details">
+                            <h3>Coding Hackathons Participation</h3>
+                            <p class="achievement-org">JCET & Nearby Tech Institutions</p>
+                            <p class="achievement-desc">
+                                Engaged in 24-hour coding sprints, creating functional prototypes under the computer science community hubs. Built collaborative networks and honed rapid development pipelines.
+                            </p>
+                        </div>
+                        <div class="achievement-badge-number">#01</div>
+                    </div>
+
+                    <!-- Achievement 2 -->
+                    <div class="achievement-item glass-card reveal">
+                        <div class="achievement-icon">
+                            <i class="fa-solid fa-rocket"></i>
+                        </div>
+                        <div class="achievement-details">
+                            <h3>Innovation Pitch Competitions</h3>
+                            <p class="achievement-org">JCET Innovation Cell</p>
+                            <p class="achievement-desc">
+                                Pitched a student smart access card model to reduce manual checks during peak lectures, securing positive evaluations for ease of installation.
+                            </p>
+                        </div>
+                        <div class="achievement-badge-number">#02</div>
+                    </div>
+
+                    <!-- Achievement 3 -->
+                    <div class="achievement-item glass-card reveal">
+                        <div class="achievement-icon">
+                            <i class="fa-solid fa-lightbulb"></i>
+                        </div>
+                        <div class="achievement-details">
+                            <h3>YIP Idea Submission</h3>
+                            <p class="achievement-org">Young Innovators Programme (YIP), K-DISC</p>
+                            <p class="achievement-desc">
+                                Formulated and submitted a decentralized student academic credential tracking idea targeting automated authenticity validations on blockchain systems.
+                            </p>
+                        </div>
+                        <div class="achievement-badge-number">#03</div>
+                    </div>
+
+                    <!-- Achievement 4 -->
+                    <div class="achievement-item glass-card reveal">
+                        <div class="achievement-icon">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+                        <div class="achievement-details">
+                            <h3>Technical Workshops Attendee</h3>
+                            <p class="achievement-org">Kerala Startup Mission (KSUM) & JCET</p>
+                            <p class="achievement-desc">
+                                Participated in multiple seminars covering AI Foundations, Node.js paradigms, and Git version control workflows.
+                            </p>
+                        </div>
+                        <div class="achievement-badge-number">#04</div>
+                    </div>
+
+                    <!-- Achievement 5 -->
+                    <div class="achievement-item glass-card reveal">
+                        <div class="achievement-icon">
+                            <i class="fa-solid fa-medal"></i>
+                        </div>
+                        <div class="achievement-details">
+                            <h3>Inter-College Competitions</h3>
+                            <p class="achievement-org">District-level Technical Symposia</p>
+                            <p class="achievement-desc">
+                                Represented JCET CSE department in Quiz bowls, debugging contests, and web crafting battles.
+                            </p>
+                        </div>
+                        <div class="achievement-badge-number">#05</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resume Section -->
+        <section id="resume" class="section">
+            <div class="container">
+                <div class="section-title-wrapper">
+                    <span class="section-subtitle">Qualifications</span>
+                    <h2 class="section-title">My Resume</h2>
+                    <div class="title-bar"></div>
+                </div>
+
+                <div class="resume-wrapper glass-card reveal">
+                    <div class="resume-header">
+                        <div class="resume-meta">
+                            <h3>Farheen F - Curriculum Vitae</h3>
+                            <p class="text-muted"><i class="fa-solid fa-file-arrow-down"></i> Ready for download & preview</p>
+                        </div>
+                        <button class="btn btn-primary" id="btn-download-resume">
+                            <i class="fa-solid fa-download"></i> Download Resume
+                        </button>
+                    </div>
+
+                    <!-- Modern Interactive Preview Frame -->
+                    <div class="resume-preview-container">
+                        <div class="resume-mock-paper">
+                            <!-- Visual placeholder representing a real resume document -->
+                            <div class="mock-header">
+                                <h2>Farheen F</h2>
+                                <p>B.Tech Computer Science & Engineering | JCET Lakkidi</p>
+                                <p>farheen.f.cse@gmail.com | +91 00000 00000 | Lakkidi, Palakkad, Kerala</p>
+                            </div>
+                            <hr class="mock-divider">
+                            <div class="mock-grid">
+                                <div class="mock-left-col">
+                                    <h3>EDUCATION</h3>
+                                    <div class="mock-block">
+                                        <h4>B.Tech CSE - JCET</h4>
+                                        <p class="mock-sub">2024 - Present (Lakkidi, Kerala)</p>
+                                    </div>
+                                    <div class="mock-block">
+                                        <h4>Higher Secondary - Science</h4>
+                                        <p class="mock-sub">2022 - 2024</p>
+                                    </div>
+                                    <h3>SKILLS</h3>
+                                    <p class="mock-skills">
+                                        C, Python, HTML, CSS, JavaScript, Git, Github, AI Prompt Engineering, VS Code, Leadership, Teamwork.
+                                    </p>
+                                </div>
+                                <div class="mock-right-col">
+                                    <h3>ACADEMIC PROJECTS</h3>
+                                    <div class="mock-block">
+                                        <h4>Campus Query Chatbot (QBot)</h4>
+                                        <p class="mock-sub">HTML, CSS, JS</p>
+                                        <p class="mock-p">Interactive college chatbot resolving queries regarding JCET courses and admissions.</p>
+                                    </div>
+                                    <div class="mock-block">
+                                        <h4>NSITE Website</h4>
+                                        <p class="mock-sub">Web Development</p>
+                                        <p class="mock-p">Event portfolio presenting dynamic schedules and speaker bio updates.</p>
+                                    </div>
+                                    <h3>ACHIEVEMENTS</h3>
+                                    <p class="mock-p">• Submitted Decentralized Credential Tracking on YIP</p>
+                                    <p class="mock-p">• Competed in 24-hr Hackathons</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="section bg-alt">
+            <div class="container">
+                <div class="section-title-wrapper">
+                    <span class="section-subtitle">Visual Memories</span>
+                    <h2 class="section-title">Campus & Projects Gallery</h2>
+                    <div class="title-bar"></div>
+                </div>
+
+                <!-- Gallery Controls -->
+                <div class="gallery-controls">
+                    <button class="gallery-btn active" data-filter="all">All</button>
+                    <button class="gallery-btn" data-filter="projects">Projects</button>
+                    <button class="gallery-btn" data-filter="events">Events</button>
+                    <button class="gallery-btn" data-filter="campus">JCET Campus</button>
+                </div>
+
+                <!-- Gallery Items -->
+                <div class="gallery-grid">
+                    <!-- Gallery Item 1 -->
+                    <div class="gallery-item glass-card reveal" data-category="projects">
+                        <div class="gallery-image-wrapper">
+                            <div class="gallery-gradient overlay-qbot"></div>
+                            <i class="fa-solid fa-comments gallery-icon"></i>
+                        </div>
+                        <div class="gallery-info">
+                            <h3>QBot Interface Mockup</h3>
+                            <p>Projects</p>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 2 -->
+                    <div class="gallery-item glass-card reveal" data-category="events">
+                        <div class="gallery-image-wrapper">
+                            <div class="gallery-gradient overlay-nsite"></div>
+                            <i class="fa-solid fa-users-viewfinder gallery-icon"></i>
+                        </div>
+                        <div class="gallery-info">
+                            <h3>NSITE Event Launch</h3>
+                            <p>Events</p>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 3 -->
+                    <div class="gallery-item glass-card reveal" data-category="campus">
+                        <div class="gallery-image-wrapper">
+                            <div class="gallery-gradient overlay-campus"></div>
+                            <i class="fa-solid fa-graduation-cap gallery-icon"></i>
+                        </div>
+                        <div class="gallery-info">
+                            <h3>JCET Academic Building</h3>
+                            <p>JCET Campus</p>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 4 -->
+                    <div class="gallery-item glass-card reveal" data-category="projects">
+                        <div class="gallery-image-wrapper">
+                            <div class="gallery-gradient overlay-smartentry"></div>
+                            <i class="fa-solid fa-shield-halved gallery-icon"></i>
+                        </div>
+                        <div class="gallery-info">
+                            <h3>SmartEntry Security Log</h3>
+                            <p>Projects</p>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 5 -->
+                    <div class="gallery-item glass-card reveal" data-category="events">
+                        <div class="gallery-image-wrapper">
+                            <div class="gallery-gradient overlay-workshop"></div>
+                            <i class="fa-solid fa-chalkboard-user gallery-icon"></i>
+                        </div>
+                        <div class="gallery-info">
+                            <h3>AI Prompting Workshop</h3>
+                            <p>Events</p>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 6 -->
+                    <div class="gallery-item glass-card reveal" data-category="campus">
+                        <div class="gallery-image-wrapper">
+                            <div class="gallery-gradient overlay-campus-life"></div>
+                            <i class="fa-solid fa-tree-city gallery-icon"></i>
+                        </div>
+                        <div class="gallery-info">
+                            <h3>Lakkidi Greenery View</h3>
+                            <p>JCET Campus</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="container">
+                <div class="section-title-wrapper">
+                    <span class="section-subtitle">Reach Out</span>
+                    <h2 class="section-title">Contact Me</h2>
+                    <div class="title-bar"></div>
+                </div>
+
+                <div class="contact-grid">
+                    <!-- Contact Information -->
+                    <div class="contact-info glass-card reveal">
+                        <h3>Connect Details</h3>
+                        <p class="contact-desc">
+                            Feel free to write to me for project collaborations, coding queries, or dynamic tech developments. I will respond as soon as possible.
+                        </p>
+                        
+                        <div class="contact-details-list">
+                            <div class="contact-detail-item">
+                                <div class="contact-detail-icon icon-blue">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </div>
+                                <div class="contact-detail-text">
+                                    <h4>Email Address</h4>
+                                    <p><a href="mailto:farheen.f.cse@gmail.com">farheen.f.cse@gmail.com</a></p>
+                                </div>
+                            </div>
+
+                            <div class="contact-detail-item">
+                                <div class="contact-detail-icon icon-purple">
+                                    <i class="fa-solid fa-phone"></i>
+                                </div>
+                                <div class="contact-detail-text">
+                                    <h4>Phone / Hotline</h4>
+                                    <p>+91 XXXXX XXXXX (Placeholder)</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-detail-item">
+                                <div class="contact-detail-icon icon-pink">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </div>
+                                <div class="contact-detail-text">
+                                    <h4>Institute Location</h4>
+                                    <p>JCET Campus, Lakkidi, Palakkad, Kerala, India - 679301</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Mini map display or custom location widget -->
+                        <div class="contact-map-placeholder">
+                            <div class="map-glow-orb"></div>
+                            <div class="map-inner-content">
+                                <i class="fa-solid fa-map-location-dot map-logo"></i>
+                                <p><strong>Lakkidi, Palakkad, Kerala</strong></p>
+                                <span class="map-tag">Jawaharlal College of Engineering</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="contact-form-container glass-card reveal">
+                        <h3>Send a Message</h3>
+                        <form id="contact-form" class="contact-form">
+                            <div class="form-group-row">
+                                <div class="form-group">
+                                    <label for="form-name">Your Name</label>
+                                    <input type="text" id="form-name" placeholder="John Doe" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="form-email">Your Email</label>
+                                    <input type="email" id="form-email" placeholder="john@example.com" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="form-subject">Subject</label>
+                                <input type="text" id="form-subject" placeholder="Project Collaboration" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="form-message">Message</label>
+                                <textarea id="form-message" rows="5" placeholder="Let's build something together..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block" id="form-submit-btn">
+                                Send Message <i class="fa-solid fa-paper-plane"></i>
+                            </button>
+                        </form>
+                        <div id="form-status" class="form-status-message"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <span class="logo-text">Farheen<span class="dot">.</span>F</span>
+                    <p>Second-Year B.Tech CSE Student & Developer</p>
+                </div>
+                
+                <div class="footer-links-grid">
+                    <div class="footer-col">
+                        <h4>Sections</h4>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About Me</a></li>
+                            <li><a href="#education">Education</a></li>
+                            <li><a href="#skills">Skills</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Creations</h4>
+                        <ul>
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="#certificates">Certificates</a></li>
+                            <li><a href="#achievements">Achievements</a></li>
+                            <li><a href="#gallery">Gallery</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="footer-divider">
+
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2026 Farheen F. All Rights Reserved. Built with <i class="fa-solid fa-heart icon-pink"></i> and modern CSS.</p>
+                
+                <div class="footer-socials">
+                    <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="footer-social-icon"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="footer-social-icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="mailto:farheen.f.cse@gmail.com" aria-label="Email" class="footer-social-icon"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#home" class="back-to-top" id="back-to-top" aria-label="Back to Top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
+
+    <!-- PDF/Certificate Viewer Modal -->
+    <div class="cert-modal" id="cert-modal">
+        <div class="cert-modal-overlay" id="cert-modal-overlay"></div>
+        <div class="cert-modal-container glass-card">
+            <div class="cert-modal-header">
+                <h3 id="cert-modal-title">Certificate Title</h3>
+                <span class="cert-modal-close" id="cert-modal-close"><i class="fa-solid fa-xmark"></i></span>
+            </div>
+            <div class="cert-modal-body" id="cert-modal-body">
+                <!-- Fallback interactive preview -->
+                <div class="pdf-viewer-fallback" id="pdf-viewer-fallback">
+                    <i class="fa-regular fa-file-pdf pdf-fallback-icon"></i>
+                    <p>PDF Viewer Simulation Mode</p>
+                    <span class="pdf-fallback-sub" id="pdf-fallback-filename">filename.pdf</span>
+                    <a href="#" class="btn btn-primary" id="modal-download-btn" download><i class="fa-solid fa-download"></i> Download Local Copy</a>
+                </div>
+                <!-- Dynamic Iframe/Object for real rendering of PDFs -->
+                <iframe id="cert-iframe" class="cert-iframe" src="" style="display:none;" title="Certificate PDF Viewer"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main JavaScript File -->
+    <script src="script.js"></script>
+</body>
+</html>
