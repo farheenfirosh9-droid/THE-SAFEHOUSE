@@ -2050,3 +2050,25 @@ button, input, textarea {
         padding: 25px;
     }
 }
+/* Theme Toggle */
+.theme-toggle {
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+/* Light Mode */
+body.light-theme {
+    background: #f5f5f5;
+    color: #222;
+}
+
+body.light-theme .theme-toggle {
+    color: #222;
+    border-color: #222;
+}
